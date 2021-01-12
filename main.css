@@ -1,0 +1,124 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#hidden{
+	display: none;
+}
+
+.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #272727;
+}
+
+.song{
+	background: #1B1B1B;
+	height: 90%;
+	width: 100%;
+
+}
+
+.song img{
+	width: 10.55%;
+	height: 15%;
+	margin: 5px;
+}
+
+
+/* Footer */
+.setupSong{
+	background-color: #272727;
+	height: 10%;
+}
+
+.setupSong div{
+	float: left;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+
+
+/* Information sur la musique actuelle */
+.infoSong{
+	width: 20%;
+}
+
+.image{
+	padding: 9px;
+}
+
+.image img{
+	height: 75px;
+	width: 75px;
+}
+
+.setupSong .content{
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.setupSong .content #title{
+	font-size: 24px;
+	color: white;
+	font-family: "Roboto Light", SansSerif;
+}
+
+.setupSong .content #author{
+	font-size: 16px;
+	color: #a3a3a3;
+	font-family: "Roboto Light", SansSerif;
+}
+
+
+
+/* Information sur les boutons */
+.swapSong{
+	width: 60%;
+}
+
+
+.swap{
+	text-align: center;
+	width: 100%;
+}
+
+.swap i{
+	font-size: 20PX;
+	color: white;
+	margin: 17.5px 20px 0 20px;
+	cursor:pointer;
+}
+
+.swap .play{
+	font-size: 26PX;
+	border: solid white 2px;
+	padding: 15px 15px 15px 20px;
+	border-radius: 50%;
+}
+
+.swap .pause{
+	font-size: 28px;
+	border: solid white 2px;
+	padding: 15px 15px 15px 15px;
+	border-radius: 50%;
+}
+
+/* Autre */
+.otherSong{
+	width: 20%;
+	text-align: right;
+}
+
+.otherSong i{
+	font-size: 26PX;
+	color: white;
+	margin: 35px 40px 0 20px;
+	cursor:pointer;
+}
+
