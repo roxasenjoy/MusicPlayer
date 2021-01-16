@@ -28,7 +28,7 @@
             <div class="swapSong">
                 <div class="swap">
 
-                    <audio controls preload="metadata" id="audio">
+                    <audio controls preload="metadata" id="audio" class="hidden">
                         <source src="song.mp3" type="audio/ogg">
                     </audio>
                       <i class="fas fa-step-backward"></i>
