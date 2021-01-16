@@ -27,18 +27,25 @@
 
             <div class="swapSong">
                 <div class="swap">
-                    <i class="fas fa-step-backward"></i>
-                    <i class="fas fa-play play" id="play"></i>
-                    <i class="fas fa-pause pause" id="pause hidden"></i>
-                    <i class="fas fa-step-forward"></i>
-                </div>
-            </div>
 
-            <div class="otherSong">
-                <i class="fas fa-volume-up"></i>
-            <!--    <i class="fas fa-volume-down"></i>
-                <i class="fas fa-volume-mute"></i> -->
-            </div>
+                    <audio controls preload="metadata" id="audio">
+                        <source src="song.mp3" type="audio/ogg">
+                    </audio>
+                      <i class="fas fa-step-backward"></i>
+                      <button id="play" onclick="enableMute()"> <i class="fas fa-play play"> </i> </button>
+                      <button id="pause" class="hidden" onclick="disableMute()"> <i class="fas fa-pause pause " ></i> </button>
+                      <i class="fas fa-step-forward"></i>
+
+                  </div>
+              </div>
+
+              <div class="otherSong">
+                      <span class="active volume" id="fort" onclick="setFort()"><i class="fas fa-volume-up" ></i></span>
+                      <span class="hidden volume" id="moyen" onclick="setMoyen()"> <i class="fas fa-volume-down"></i></span>
+                      <span class="hidden volume" id="faible" onclick="setFaible()"> <i class="fas fa-volume-mute" ></i></span>
+              </div>
+
+
 
         </div>
     </div>
