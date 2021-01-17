@@ -1,1 +1,1 @@
-Première vresion de mon spotify maison. (On teste juste les fonctionnalités)
+Première version de mon spotify maison. (On teste juste les fonctionnalités)
