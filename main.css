@@ -133,12 +133,7 @@ button{
 
 .otherSong span{
 	color: white;
-
 }
 
-audio::-webkit-media-controls-play-button{
-	color: red;
-	margin-top: 20px;
-}
 
 

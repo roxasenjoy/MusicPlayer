@@ -29,21 +29,21 @@
                 <div class="swap">
 
                     <audio controls preload="metadata" id="audio" class="hidden">
-                        <source src="song.mp3" type="audio/ogg">
+                        <source src="song.mp3" type="audio/ogg" id="source">
                     </audio>
-                      <i class="fas fa-step-backward"></i>
-                      <button id="play" onclick="enableMute()"> <i class="fas fa-play play"> </i> </button>
-                      <button id="pause" class="hidden" onclick="disableMute()"> <i class="fas fa-pause pause " ></i> </button>
-                      <i class="fas fa-step-forward"></i>
+                    <span onclick="musicBackward();"><i class="fas fa-step-backward" ></i></span>
+                    <button id="play" > <i class="fas fa-play play"> </i> </button>
+                    <button id="pause" class="hidden"> <i class="fas fa-pause pause " ></i> </button>
+                    <span onclick="musicForward();"><i class="fas fa-step-forward" ></i></span>
 
                   </div>
               </div>
 
               <div class="otherSong">
-                      <span class="active volume" id="fort" onclick="setFort()"><i class="fas fa-volume-up" ></i></span>
-                      <span class="hidden volume" id="moyen" onclick="setMoyen()"> <i class="fas fa-volume-down"></i></span>
-                      <span class="hidden volume" id="faible" onclick="setFaible()"> <i class="fas fa-volume-mute" ></i></span>
-              </div>
+                    <span class="active volume" id="fort" onclick="setFort()"><i class="fas fa-volume-up" ></i></span>
+                    <span class="hidden volume" id="moyen" onclick="setMoyen()"> <i class="fas fa-volume-down"></i></span>
+                    <span class="hidden volume" id="faible" onclick="setFaible()"> <i class="fas fa-volume-mute" ></i></span>
+              </>
 
 
 

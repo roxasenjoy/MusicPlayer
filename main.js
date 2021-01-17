@@ -51,6 +51,8 @@
     let moyen = document.getElementById("moyen");
     let faible = document.getElementById("faible");
 
+    audio.volume = 0.1;
+
     function setFort(){
         audio.volume = 0.5;
         fort.className = "hidden";
@@ -69,7 +71,44 @@
         fort.className = "active";
     }
 
+    /**
+     * Changer de musique
+     */
 
+    let source = document.getElementById("source");
+    let playlist = ["song.mp3", "song2.mp3", "song3.mp3"];
+    let position = 1;
+
+    function musicForward(){
+
+        audio.load();
+        audio.play();
+        console.log(position);
+        console.log(playlist[position]);
+
+        if(position >= playlist.length - 1 ){
+            position = 0;
+        }else{
+            source.src = playlist[position];
+            position++;
+        }
+
+
+    }
+
+    function musicBackward(){
+        audio.load();
+        audio.play();
+        console.log(position);
+        console.log(playlist[position]);
+
+        if(position >= playlist.length - 1 ){
+            position = 0;
+        }else{
+            source.src = playlist[position];
+            position--;
+        }
+    }
 
 
 
